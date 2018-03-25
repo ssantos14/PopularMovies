@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="sortOrderOptionLabels">
+        <item>@string/sortPopularTitle</item>
+        <item>@string/sortRatingTitle</item>
+        <item>@string/sortFavoriteTitle</item>
+    </array>
+    <array name="sortOrderOptions">
+        <item>@string/sortPopularValue</item>
+        <item>@string/sortRatingValue</item>
+        <item>@string/sortFavoriteValue</item>
+    </array>
+</resources>

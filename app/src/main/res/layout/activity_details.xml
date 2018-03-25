@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/details_activity_scrollview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/movie_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="ContentDescription"/>
+
+            <Button
+                android:id="@+id/add_to_favorites_button"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="@string/addToFavoritesButtonLabel"
+                android:textSize="10sp"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@id/movie_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/movie_poster"
+                app:layout_constraintRight_toRightOf="parent"
+                android:onClick="addMovieToFavoritesData"
+                android:contentDescription="@string/addToFavoritesButtonLabel"/>
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="32sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                app:layout_constraintBottom_toTopOf="@id/add_to_favorites_button"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/movie_poster"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/movie_info_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detailsLabel"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/movie_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/trailers_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trailersLabel"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailers_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:id="@+id/reviews_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ReviewsLabel"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:paddingTop="16dp"
+            android:paddingStart="16dp"
+            android:paddingLeft="16dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviews_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

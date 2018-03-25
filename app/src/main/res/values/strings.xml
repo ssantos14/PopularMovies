@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="sortPopularValue">popular</string>
+    <string name="sortRatingValue">top_rated</string>
+    <string name="sortPopularTitle">Sort By Most Popular</string>
+    <string name="sortRatingTitle">Sort By Top Rated</string>
+    <string name="trailerButtonLabel">Trailer</string>
+    <string name="addToFavoritesButtonLabel">Add To Favorites</string>
+    <string name="removeFromFavoritesButtonLabel">Remove from Favorites</string>
+    <string name="sortOrderPreferenceKey">sort_order</string>
+    <string name="sortOrderPreferenceTitle">Choose Sort Order</string>
+    <string name="sortFavoriteTitle">Sort By Favorites</string>
+    <string name="sortFavoriteValue">favorites</string>
+    <string name="detailsLabel">Details</string>
+    <string name="trailersLabel">Trailers</string>
+    <string name="ReviewsLabel">Reviews</string>
+    <string name="settingsLabel">Settings</string>
+
+</resources>
