@@ -16,7 +16,7 @@ import java.util.Scanner;
 
 public class NetworkUtils {
     private static final String BASE_URL =  "http://api.themoviedb.org/3/movie/";
-    private static final String ApiKey = "2155be6710f26234ce293294602854dc";
+    private static final String ApiKey = "INSERT";
     private static final String YOUTUBE_URL = "http://youtube.com/watch";
 
     public static URL buildPopularMoviesUrl(){
